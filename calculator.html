@@ -2,7 +2,100 @@
 <html>
     <head>
         <title>My Calculator</title>
+        <style>
+            table{
+                border: 1px solid black;
+                height: 600px;
+                width: 300px;
+                border-collapse: separate;
+                border-radius: 6px;
+                background-color: rgba(145, 145, 145, 0.3);
+                padding: 10px 10px 30px 10px;
+            }
+            .button{
+                width: 75px;
+                height: 75px;
+                text-align: center;
+                border-style: hidden;
+                border-radius: 6px;
+                background-color: rgba(145, 145, 145, 0.5);
+            }
+            .yellow-button{
+                background-color: gold;
+            }
+            .white-button{
+                background-color: white;
+            }
+            .first-row-button{
+                height: 50px;
+            }
+        </style>
     </head>
     <body>
+        <table>
+            
+            <!-- textarea -->
+            <tr>
+                <td colspan="4">
+                    <input type="number" style="width: 300px; height: 75px; text-align: right; margin-bottom: 10px;">
+                </td>
+            </tr>
+            
+            <!-- 1st row of buttons -->
+            <tr>
+                <td><button class="button first-row-button" type="button"><p>mc</p></button></td>
+                <td><button class="button first-row-button" type="button">mr</button></td>
+                <td><button class="button first-row-button" type="button">m-</button></td>
+                <td><button class="button first-row-button" type="button">m+</button></td>
+            </tr>
+            
+            <!-- 2nd row of buttons -->
+            <tr>
+                <td><button class="button" type="button">AC</button></td>
+                <td><button class="button" type="button">√x</button></td>
+                <td><button class="button" type="button">%</button></td>
+                <td><button class="button yellow-button" type="button">÷</button></td>
+            </tr>
+            
+            <!-- 3rd row of buttons -->
+            <tr>
+                <td><button class="button white-button" type="button">7</button></td>
+                <td><button class="button white-button" type="button">8</button></td>
+                <td><button class="button white-button" type="button">9</button></td>
+                <td><button class="button yellow-button" type="button">x</button></td>
+            </tr>
+            
+            <!-- 4th row of buttons -->
+            <tr>
+                <td><button class="button white-button" type="button">4</button></td>
+                <td><button class="button white-button" type="button">5</button></td>
+                <td><button class="button white-button" type="button">6</button></td>
+                <td><button class="button yellow-button" type="button">-</button></td>
+            </tr>
+            
+            <!-- 5th row of buttons -->
+            <tr>
+                <td><button class="button white-button" type="button">1</button></td>
+                <td><button class="button white-button" type="button">2</button></td>
+                <td><button class="button white-button" type="button">3</button></td>
+                <td><button class="button yellow-button" type="button">+</button></td>
+            </tr>
+
+            <!-- 6th row of buttons -->
+            <tr>
+                <td><button class="button white-button" type="button">0</button></td>
+                <td><button class="button white-button" type="button">.</button></td>
+                <td><button class="button white-button" type="button">+/-</button></td>
+                <td><button class="button yellow-button" type="button">=</button></td>
+            </tr>
+
+            <!-- 7th row of buttons -->
+            <tr>
+                <td><button class="button" type="button">π</button></td>
+                <td><button class="button" type="button">x^y</button></td>
+                <td><button class="button" type="button">R2</button></td>
+                <td><button class="button" type="button">R0</button></td>
+            </tr>
+        </table>
     </body>
 </html>
