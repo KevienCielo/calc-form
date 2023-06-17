@@ -7,10 +7,19 @@
                 border: 1px solid black;
                 height: 600px;
                 width: 300px;
-                border-collapse: separate;
-                border-radius: 6px;
+                border-radius: 15px;
                 background-color: rgba(145, 145, 145, 0.3);
                 padding: 10px 10px 30px 10px;
+            }
+            td{
+                padding: 3px;
+            }
+            #input-box{
+                font-size: 3em;
+                width: 324px;
+                height: 75px;
+                text-align: right; 
+                margin-bottom: 10px;
             }
             .button{
                 width: 75px;
@@ -19,12 +28,16 @@
                 border-style: hidden;
                 border-radius: 6px;
                 background-color: rgba(145, 145, 145, 0.5);
+                font-size: 1.75em;
+                font-weight: lighter;
             }
             .yellow-button{
                 background-color: gold;
+                font-weight: bold;
             }
             .white-button{
                 background-color: white;
+                font-weight: bold;
             }
             .first-row-button{
                 height: 50px;
@@ -34,16 +47,16 @@
     <body>
         <table>
             
-            <!-- textarea -->
+            <!-- input box -->
             <tr>
                 <td colspan="4">
-                    <input type="number" style="width: 300px; height: 75px; text-align: right; margin-bottom: 10px;">
+                    <input type="number" value="0" id="input-box">
                 </td>
             </tr>
             
             <!-- 1st row of buttons -->
             <tr>
-                <td><button class="button first-row-button" type="button"><p>mc</p></button></td>
+                <td><button class="button first-row-button" type="button">mc</button></td>
                 <td><button class="button first-row-button" type="button">mr</button></td>
                 <td><button class="button first-row-button" type="button">m-</button></td>
                 <td><button class="button first-row-button" type="button">m+</button></td>
