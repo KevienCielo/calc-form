@@ -1,7 +1,254 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Registration Form</title>
     </head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+        }
+        .wrapper{
+            background-color: rgba(255, 255, 255, 0.6);
+            width: 800px;
+            margin: 5% auto;
+            border-radius: 25px;
+            padding: 2em;
+        }
+        .header{
+            text-align: center;
+        }
+        .sub-container{
+            display: inline-block;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+        }
+        .container2{
+            display: flex;
+            flex-direction: column;
+        }
+        .sub-container{
+            flex: 1 1 100px;
+        }
+        .sub-container2{
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+        }
+    </style>
     <body>
+        <div class="wrapper">
+            <h1 class="header">School Forms</h1>
+            <form action="" class="form-box">
+
+                <!-- Start of item no. 1 Child's details -->
+                <h3 class="subheader" style="margin-bottom: 0px;">1. Child's details</h3>                
+                <div class="container">
+                    <div class="sub-container">
+                        <label style="display: block;" for="childFirstName">Child's First Name(s)</label>
+                        <input style="width: 350px;" type="text" name="childFirstName">
+                    </div>
+                    <div class="sub-container">
+                        <label style="display: block;" for="childFirstName">Child's Surname</label>
+                        <input style="width: 350px;" type="text" name="childFirstName">
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <div class="sub-container">
+                        <label style="display: block;" for="childBirthDate">Child's Date of Birth</label>
+                        <input style="width: 215px;" type="date" name="childBirthDate">
+                    </div>
+                    <div class="sub-container">
+                        <div style="display: inline-block; margin-left: 5px;">
+                            <label style="display: block;" for="male">Male (tick)</label>
+                            <input style="display: block; width: 20px; height: 20px;" type="checkbox">
+                        </div>
+                        <div style="display: inline-block; margin-left: 20px;">
+                            <label style="display: block;" for="female">Female (tick)</label>    
+                            <input style="display: block; width: 20px; height: 20px;" type="checkbox">    
+                        </div>                        
+                    </div>
+                </div>
+                
+                <div class="container container2">
+                    <div class="sub-container" style="display: flex; align-items: center;">
+                        <label style="flex: 1 1 100px;" for="homeAddress">Home address</label>
+                        <textarea name="" id="" cols="45" rows="5" style="resize: none; flex: 100 1 100px;"></textarea>
+                    </div>
+                    <div class="sub-container sub-container2">
+                        <div style="flex: 2 1 100px; align-self: center;">
+                            <label for="dateOfMoving">Date of moving to this address</label>
+                            <input style="width: 215px;" type="date" name="dateOfMoving">
+                        </div>
+                        <div style="flex: 1 1 100px; align-self: flex-start;">
+                            <label for="postCode">Post Code</label>
+                            <input type="number">    
+                        </div>
+                    </div>
+                </div>
+                <!-- End of item no. 1. Child's details -->
+
+                <!-- Start of item no. 2. Parents/Carers details -->
+                <h3 class="subheader" style="margin-bottom: 0px; margin-top: 0;">2. Parents/Carers details (please tick)</h3>
+                <div class="container">
+                    <div class="sub-container">
+                        <label for="Mr">Mr</label>    
+                        <input style="width: 20px; height: 20px;" type="checkbox">
+                    </div>
+                    <div class="sub-container">
+                        <label for="Mrs">Mrs</label>    
+                        <input style="width: 20px; height: 20px;" type="checkbox">
+                    </div>
+                    <div class="sub-container">
+                        <label for="Miss">Miss</label>    
+                        <input style="width: 20px; height: 20px;" type="checkbox">
+                    </div>
+                    <div class="sub-container">
+                        <label for="Ms">Ms</label>    
+                        <input style="width: 20px; height: 20px;" type="checkbox">
+                    </div>
+                    <div class="sub-container">
+                        <label for="other">Other</label>    
+                        <input style="width: 20px; height: 20px;" type="checkbox">
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="sub-container">
+                        <label for="firstName">First Name(s)</label>
+                        <input style="width: 250px;" type="text" name="firstName">
+                    </div>
+                    <div class="sub-container">
+                        <label for="surname">Surname</label>
+                        <input style="width: 250px;" type="text" name="surname">
+                    </div>
+                </div>
+
+                <div>Relationship to the child (please tick)</div>
+                <div class="container">
+                    <div class="sub-container">
+                        <label for="Mother">Mother</label>    
+                        <input style="width: 20px; height: 20px;" type="checkbox">
+                    </div>
+                    <div class="sub-container">
+                        <label for="Father">Father</label>    
+                        <input style="width: 20px; height: 20px;" type="checkbox">
+                    </div>
+                    <div class="sub-container">
+                        <label for="stepParent">Step Parent</label>    
+                        <input style="width: 20px; height: 20px;" type="checkbox">
+                    </div>
+                    <div class="sub-container">
+                        <label for="fosterParent">Foster Parent</label>    
+                        <input style="width: 20px; height: 20px;" type="checkbox">
+                    </div>
+                    <div class="sub-container">
+                        <label for="other">Other</label>    
+                        <input style="width: 20px; height: 20px;" type="checkbox">
+                    </div>
+                </div>
+
+                <div class="container" style="margin-top: 10px;">
+                    <div class="sub-container">
+                        <label for="dayTelNo">Day Tel No.</label>
+                        <input style="width: 250px;" type="number" name="dayTelNo">
+                    </div>
+                    <div class="sub-container">
+                        <label for="eveTelNo">Eve Tel No.</label>
+                        <input style="width: 250px;" type="text" name="eveTelNo">
+                    </div>
+                </div>
+
+                <div class="container" style="margin-top: 10px;">
+                    <div class="sub-container">
+                        <label for="mobileNo">Mobile No.</label>
+                        <input style="width: 250px;" type="number" name="mobileNo">
+                    </div>
+                    <div class="sub-container">
+                        <label for="emailAddress">Email Address</label>
+                        <input style="width: 250px;" type="text" name="emailAddress">
+                    </div>
+                </div>
+                <!-- End of item no. 2. Parents/Carers details -->
+                
+                <!-- Start of item 3. Further Information -->
+                <h3 class="subheader" style="margin-bottom: 0px; margin-top: 2em;">3. Further Information</h3>
+                <p style="margin-top: 0px;">If you hace any older children attending the school, * please provide the details below:</p>
+                <div class="container" style="margin-top: 5px;">
+                    <div class="sub-container">
+                        <label for="siblingName">Sibling's full name</label>
+                        <input style="width: 250px;" type="number" name="siblingName">
+                    </div>
+                    <div class="sub-container">
+                        <label for="siblingBirthDate">Sibling's date of birth</label>
+                        <input style="width: 250px;" type="date" name="siblingBirthDate">
+                    </div>
+                </div>
+
+                <div class="container" style="margin-top: 10px;">
+                    <div class="sub-container">
+                        <label for="siblingName2">Sibling's full name</label>
+                        <input style="width: 250px;" type="number" name="siblingName2">
+                    </div>
+                    <div class="sub-container">
+                        <label for="siblingBirthDate2">Sibling's date of birth</label>
+                        <input style="width: 250px;" type="date" name="siblingBirthDate2">
+                    </div>
+                </div>
+
+                <h4 style="margin-bottom: 0px;">NURSERY PROVISION IS 5 MORNING OR 5 AFTERNOON SESSIONS, AS SHOWN BELOW.</h4>
+                <h4 style="margin-top: 0px;">*Please tick which sessions you prefer.</h4>
+                <div class="container">
+                    <div class="sub-container">
+                        <label for="morningSession">The morning sessions run from:</label>
+                    </div>
+                    <div class="sub-container">
+                        <label for="siblingName2">8:45 a.m. to 11:45 p.m.</label>
+                    </div>
+                    <div class="sub-container">
+                        <input style="width: 20px; height: 20px;" type="checkbox">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="sub-container">
+                        <label for="afternoonSession">The afternoon sessions run from:</label>
+                    </div>
+                    <div class="sub-container">
+                        <label for="siblingName2">12:15 a.m. to 3:15 p.m.</label>
+                    </div>
+                    <div class="sub-container">
+                        <input style="width: 20px; height: 20px;" type="checkbox">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="sub-container">
+                        <label for="morningSession">Either:</label>
+                    </div>
+                    <div class="sub-container">
+                        <label for="siblingName2"></label>
+                    </div>
+                    <div class="sub-container">
+                        <input style="width: 20px; height: 20px;" type="checkbox">
+                    </div>
+                </div>
+
+                <div>
+                    <p>
+                        *Where possible parental preference will be taken into account but no 
+                        guarantee can be given as the allocation of places depends on whether
+                        a vacancy exists in the morning or the afternoon. It would be helpful, 
+                        therfore, if you could also tick the "Either session" if you do not
+                        have a strong preference.
+                    </p>
+                </div>
+                <h3>Please turn over to complete the rest of this application</h3>
+                <!-- End of item 3. Further Information -->
+            </form>
+        </div>
     </body>
 </html>
